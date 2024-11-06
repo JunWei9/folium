@@ -16,6 +16,6 @@ jobs:
       uses: trilom/file-changes-action@v1.2.4
       with:
         output: ' '
-    - uses: pre-commit/action@v3.0.0
+    - uses: pre-commit/action@v3.0.1
       with:
         extra_args: --files ${{ steps.file_changes.outputs.files}}
